@@ -4,11 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test for WDD231</title>
+    <title>Home Chamber of Commerce</title>
+    <meta name="description" content="WDD231 course chamber of commerce homepage by Ramiro Tapia">
+    <meta name="author" content="Ramiro Tapia">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="512" height="512">
+        <span>Bolivian Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+
+        <div class="main-grid">
+
+            <section class="card">
+                <h2>About Me</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempore dignissimos ad rem doloremque ea iste, labore praesentium id quam nobis quod accusamus libero suscipit amet, maxime quos velit? Culpa.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>Student Photo</h2>
+
+                <img src="images/profile.webp" alt="Student Photo">
+            </section>
+
+        </div>
+
+        <section class="courses">
+
+            <h2>Web Certificate Courses</h2>
+
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+
+            <div id="course-container"></div>
+
+            <p id="credits"></p>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/ramirotl/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="44" height="44"></a>
+            <a href="https://github.com/ramirotl" target="_blank"><img src="images/github.svg" alt="GitHub" width="44" height="44"></a>
+            <a href="https://www.facebook.com/ramiro.tapia.925" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="44" height="44"></a>
+        </div>
+
+        <p>
+            &copy;<span id="currentyear"></span>
+            🌴 Ramiro Tapia 🌴 Bolivia
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
