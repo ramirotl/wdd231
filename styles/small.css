@@ -1,10 +1,10 @@
 :root {
     --primary-color: #8C1D18;
-    --secondary-color: #236526;
+    --secondary-color: #000;
     --background-color: #F5F5F5;
     --accent1-color: #333;
     --accent2-color: #e07a5f;
-    --accent3-color: #fff;
+    --accent3-color: #ddd;
     --accent4-color: #ccc;
     --heading-font: 'Merriweather', serif;
     --body-font: 'Roboto', sans-serif;
@@ -21,6 +21,7 @@ body {
     background-color: var(--background-color);
     color: var(--accent1-color);
     line-height: 1.6;
+    min-width: 380px;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -31,7 +32,7 @@ header {
     grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
     align-items: end;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--accent3-color);
     column-gap: 8px;
 }
 
@@ -43,14 +44,14 @@ header img {
 
 header span {
     font-size: 1.2rem;
-    color: #000;
+    color: var(--secondary-color);
 }
 
 /* Hamburger */
 .hamburger {
     background: none;
     border: none;
-    color: #000;
+    color: var(--secondary-color);
     cursor: pointer;
 }
 
@@ -84,7 +85,7 @@ header span {
     padding: .8rem 10px;
     color: var(--accent1-color);
     text-decoration: none;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--accent3-color);
 }
 
 .navigation li.current {
@@ -156,7 +157,7 @@ main {
     border: none;
     border-radius: 10px;
     background-color: var(--accent2-color);
-    color: black;
+    color: var(--secondary-color);
     font-weight: bold;
     cursor: pointer;
     font-size: 1rem;
@@ -180,12 +181,12 @@ main {
 }
 
 .completed {
-    background-color: #e8e2c8;
+    background-color: var(--background-color);
 }
 
 .not-completed {
     background-color: var(--accent2-color);
-    color: black;
+    color: var(--secondary-color);
 }
 
 /* Footer */
@@ -208,7 +209,7 @@ footer {
     align-items: center;
     width: 44px;
     height: 44px;
-    border: #ccc solid 1px;
+    border: var(--accent4-color) solid 1px;
     border-radius: 22px;
 }
 
@@ -218,5 +219,5 @@ footer {
 }
 
 .socials a:hover {
-    background-color: #ddd;
+    background-color: var(--accent3-color);
 }
