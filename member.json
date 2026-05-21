@@ -1,0 +1,24 @@
+{
+    "family_name": "Tapia",
+    "moving_in_date": "10-24-2025",
+    "number_of_people": 3,
+    "visited_by_the_bishopric": true,
+    "family_members": [
+        {
+        "name": "Ramiro",
+        "gender": "male",
+        "birthdate": "12-10-1960"
+        },
+        {
+            "name": "Mirtha",
+            "gender": "female",
+            "birthdate": "08-02-1960"
+        },
+        {
+            "name": "Sebastian",
+            "gender": "male",
+            "birthdate": "05-10-2002"
+        }
+    ]
+
+}
