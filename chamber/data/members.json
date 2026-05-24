@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Andes Tech Solutions",
+        "address": "Av. Banzer, Santa Cruz, Bolivia",
+        "phone": "+591 70000001",
+        "website": "https://www.andestech.com",
+        "image": "andes-tech.webp",
+        "membership": 3,
+        "description": "Software development and IT consulting."
+    },
+    {
+        "name": "Bolivia Coffee Export",
+        "address": "Cochabamba, Bolivia",
+        "phone": "+591 70000002",
+        "website": "https://www.boliviacoffee.com",
+        "image": "coffee.webp",
+        "membership": 2,
+        "description": "Premium Bolivian coffee exporter."
+    },
+    {
+        "name": "Altiplano Logistics",
+        "address": "La Paz, Bolivia",
+        "phone": "+591 70000003",
+        "website": "https://www.altiplanologistics.com",
+        "image": "logistics.webp",
+        "membership": 1,
+        "description": "Transportation and logistics company."
+    },
+    {
+        "name": "EcoTravel Bolivia",
+        "address": "Sucre, Bolivia",
+        "phone": "+591 70000004",
+        "website": "https://www.ecotravelbo.com",
+        "image": "travel.webp",
+        "membership": 3,
+        "description": "Eco tourism services across Bolivia."
+    },
+    {
+        "name": "Solar Energy Bolivia",
+        "address": "Tarija, Bolivia",
+        "phone": "+591 70000005",
+        "website": "https://www.solarbo.com",
+        "image": "solar.webp",
+        "membership": 2,
+        "description": "Renewable energy company."
+    },
+    {
+        "name": "Titan Construction",
+        "address": "Oruro, Bolivia",
+        "phone": "+591 70000006",
+        "website": "https://www.titanconstruct.com",
+        "image": "construction.webp",
+        "membership": 1,
+        "description": "Commercial construction services."
+    },
+    {
+        "name": "Digital Market Bolivia",
+        "address": "Santa Cruz, Bolivia",
+        "phone": "+591 70000007",
+        "website": "https://www.digitalmarketbo.com",
+        "image": "marketing.webp",
+        "membership": 2,
+        "description": "Marketing and branding agency."
+    }
+]

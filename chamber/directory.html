@@ -1,33 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory - Bolivian Chamber of Commerce</title>
+    <title>Directory - Bolivia Chamber of Commerce</title>
     <meta name="description" content="WDD231 course chamber of commerce homepage by Ramiro Tapia">
     <meta name="author" content="Ramiro Tapia">
-    <!-- css, scripts and favicon -->
+    <!-- css, scripts, and favicon -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/courses.js" defer></script>
-    <link rel="icon" href="favicon.ico">
+    <script src="scripts/members.js" defer></script>
+    <link rel="icon" href="chamberFavicon.ico">
     <!-- social media tags -->
-    <meta property="og:title" content="Directory of the Bolivian Chamber of Commerce">
+    <meta property="og:title" content="Directory of the Bolivia Chamber of Commerce">
     <meta property="og:description"
-        content="This is the Directory of the Bolivian Chamber of Commerce where everybody has access to build connections, boost their business development and help others do the same.">
-    <meta property="og:image" content="https://ramirotl.github.io/wdd231/images/profile.webp">
-    <meta property="og:url" content="https://ramirotl.github.io/wdd231">
+        content="This is the Directory of the Bolivia Chamber of Commerce where everybody has access to build connections, boost their business development and help others do the same.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://ramirotl.github.io/wdd231/chamber/directory.html">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="512" height="512">
+        <span>Bolivia Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discovery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Business Directory</h1>
+        <div class="menu">
+            <button id="grid">⬛ Grid</button>
+            <button id="list">☰ List</button>
+        </div>
+        <section id="members" class="grid"></section>
+    </main>
+    <footer>
+        Bolivia Chamber of Commerce
+        Address
+        Email
+        Phone Number
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/ramirotl/" target="_blank"><img src="images/linkedin.svg"
+                    alt="LinkedIn" width="44" height="44"></a>
+            <a href="https://github.com/ramirotl" target="_blank"><img src="images/github.svg" alt="GitHub" width="44"
+                    height="44"></a>
+            <a href="https://www.facebook.com/ramiro.tapia.925" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="44" height="44"></a>
+        </div>
+
+        <p>
+            WDD231 Class Project
+            &copy;<span id="currentyear"></span>
+            🌴 Ramiro Tapia 🌴 Bolivia
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>

@@ -1,0 +1,41 @@
+@media only screen and (min-width: 600px) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px; /* 1100px? */
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 50px auto;
+    }
+
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation li {
+        flex: 1;
+    }
+
+    .navigation a {
+        text-align: center;
+        border: none;
+    }
+
+    #members.list section {
+        grid-template-columns: 2fr 2fr 1fr 1fr;
+        align-items: center;
+    }
+}
