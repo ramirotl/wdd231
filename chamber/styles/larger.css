@@ -38,4 +38,15 @@
         grid-template-columns: 2fr 2fr 1fr 1fr;
         align-items: center;
     }
+
+        /* --- MAIN HOME --- */
+    
+    .home-info {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1rem;
+    }
+    #spotlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

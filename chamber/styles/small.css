@@ -5,7 +5,7 @@
     --accent1-color: #333;
     --accent2-color: #e07a5f;
     --accent3-color: #ddd;
-    --accent4-color: #ccc;
+    --accent4-color: #ffffff;
     --heading-font: 'Merriweather', serif;
     --body-font: 'Roboto', sans-serif;
 }
@@ -32,7 +32,7 @@ header {
     grid-template-columns: 50px auto 44px;
     align-items: center;
     padding: 1rem;
-    border-bottom: 1px solid var(--accent4-color);
+    border-bottom: 1px solid var(--accent3-color);
 }
 
 header img {
@@ -86,10 +86,10 @@ header span {
 
 .navigation a:hover {
     background-color: var(--accent2-color);
-    color: white;
+    color: var(--accent4-color);
 }
 
-/* Main */
+/* --- MAIN DIRECTORY --- */
 main {
     padding: 1rem;
 }
@@ -109,7 +109,7 @@ h1 {
 .menu button {
     padding: .7rem 1rem;
     border: 1px solid var(--secondary-color);
-    background-color: white;
+    background-color: var(--accent4-color);
     cursor: pointer;
     font-weight: bold;
 }
@@ -122,9 +122,9 @@ h1 {
 }
 
 #members section {
-    background-color: white;
+    background-color: var(--accent4-color);
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--accent3-color);
     border-radius: 8px;
     text-align: center;
 }
@@ -163,8 +163,77 @@ h1 {
 }
 
 #members.list section:nth-child(even) {
-    background-color: #eee;
+    background-color: var(--background-color);
 }
+
+/* --- MAIN HOME --- */
+
+/* Hero */
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cta-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Home-info */
+.home-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.home-info section {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Spotlights */
+#spotlights {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#spotlights section {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#spotlights img {
+    width: 120px;
+    height: auto;
+    margin: 1rem auto;
+}
+
+#spotlights a {
+    display: inline-block;
+    margin-top: .5rem;
+    color: var(--accent2-color)
+}
+
 
 /* Footer */
 footer {
