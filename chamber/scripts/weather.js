@@ -1,6 +1,13 @@
 const currentTemp = document.querySelector("#current-temp");
 const weatherDesc = document.querySelector("#weather-desc");
 const weatherIcon = document.querySelector("#weather-icon");
+
+const highTemp = document.querySelector("#high-temp");
+const lowTemp = document.querySelector("#low-temp");
+const humidity = document.querySelector("#humidity");
+const sunrise = document.querySelector("#sunrise");
+const sunset = document.querySelector("#sunset");
+
 const day1 = document.querySelector("#day1");
 const day2 = document.querySelector("#day2");
 const day3 = document.querySelector("#day3");
@@ -26,19 +33,48 @@ async function getCurrentWeather() {
         console.error(error);
     }
 }
-
+//  fix 
 
 function displayCurrentWeather(data) {
+
     currentTemp.textContent =
         `${Math.round(data.main.temp)}°C`;
+
     weatherDesc.textContent =
         data.weather[0].description;
+
+    highTemp.textContent =
+        `${Math.round(data.main.temp_max)}°C`;
+
+    lowTemp.textContent =
+        `${Math.round(data.main.temp_min)}°C`;
+
+    humidity.textContent =
+        `${data.main.humidity}%`;
+
+    const sunriseTime =
+        new Date(data.sys.sunrise * 1000);
+
+    const sunsetTime =
+        new Date(data.sys.sunset * 1000);
+
+    sunrise.textContent =
+        sunriseTime.toLocaleTimeString([], {
+            hour: 'numeric',
+            minute: '2-digit'
+        });
+
+    sunset.textContent =
+        sunsetTime.toLocaleTimeString([], {
+            hour: 'numeric',
+            minute: '2-digit'
+        });
+
     const iconSrc =
-        `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    weatherIcon.setAttribute(
-        "src",
-        iconSrc
-    );
+        `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+
+    weatherIcon.setAttribute("src", iconSrc);
+
     weatherIcon.setAttribute(
         "alt",
         data.weather[0].description

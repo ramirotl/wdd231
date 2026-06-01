@@ -207,6 +207,37 @@ h1 {
     border: 1px solid #ddd;
 }
 
+.home-info section h2 {
+    background-color: #333;
+    color: white;
+    margin: -1rem -1rem 1rem -1rem;
+    padding: .5rem;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.weather-current {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.weather-current img {
+    width: 80px;
+    height: auto;
+}
+
+.weather-details p {
+    margin-bottom: .25rem;
+    font-size: 0.8rem;
+}
+
+.forecast p {
+    text-align: left;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
 /* Spotlights */
 #spotlights {
     display: grid;

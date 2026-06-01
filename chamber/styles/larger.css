@@ -44,9 +44,23 @@
     .home-info {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
-        gap: 1rem;
+        gap: 0.5rem;
     }
+    
+    .events {
+        min-height: 250px;
+    }
+    
+    .weather {
+        min-height: 250px;
+    }
+    
+    .forecast {
+        min-height: 250px;
+    }
+    
     #spotlights {
         grid-template-columns: repeat(3, 1fr);
     }
+
 }
