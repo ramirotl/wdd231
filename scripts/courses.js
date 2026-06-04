@@ -39,6 +39,8 @@ const courses = [
 
 const courseContainer = document.querySelector("#course-container");
 const creditsDisplay = document.querySelector("#credits");
+// idk
+const courseDetails = document.querySelector("#course-details");
 
 function displayCourses(courseList) {
 
@@ -100,4 +102,28 @@ document.querySelector("#wdd").addEventListener("click", () => {
     );
 
     displayCourses(wddCourses);
+});
+
+
+//idk x2
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
+courseDiv.addEventListener('click', () => {
+    displayCourseDetails(course);
 });
