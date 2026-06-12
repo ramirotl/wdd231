@@ -1,10 +1,10 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1025px) {
 
-    header,
+    /* header,
     main,
     nav,
     footer {
-        max-width: 900px; /* 1100px? */
+        max-width: 900px; 
         margin: 0 auto;
     }
 
@@ -32,42 +32,58 @@
     .navigation a {
         text-align: center;
         border: none;
-    }
+    } */
 
     #members.list section {
         grid-template-columns: 2fr 2fr 1fr 1fr;
         align-items: center;
     }
 
-        /* --- MAIN HOME --- */
-    
+    /* --- MAIN HOME --- */
+
     .home-info {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         gap: 0.5rem;
     }
-    
+
     .events {
         min-height: 250px;
     }
-    
+
     .weather {
         min-height: 250px;
     }
-    
+
     .forecast {
         min-height: 250px;
     }
-    
+
     #spotlights {
         grid-template-columns: repeat(3, 1fr);
     }
 
-        /* --- MAIN JOIN --- */
-        
+    /* --- MAIN JOIN --- */
+
     .join-container {
         grid-template-columns: 2fr 1fr;
         align-items: start;
+    }
+
+    /* --- MAIN DISCOVER --- */
+
+    #discover-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .discover-card img {
+        transition: transform .3s ease;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.05);
     }
 
 }
